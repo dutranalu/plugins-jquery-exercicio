@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,6 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin: 0 auto;
 }
 
 h2 {
@@ -23,15 +23,16 @@ h2 {
     margin-bottom: 16px;
 }
 
+/* Container principal */
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px;
-    margin-top: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Campos do formulário */
 .form-campo {
     margin-bottom: 20px;
 }
@@ -49,16 +50,33 @@ h2 {
     border-radius: 5px;
 }
 
+/* Botão */
 .container button {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagens de erro */
 .error {
-    color: red
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+/* Carousel */
+#carousel-imagens img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
 }
